@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <p class="header-title">لیست تراکنش ها</p>
+      <button class="header-button">بارگزاری تراکنش ها</button>
+    </div>
+    <div class="content">
+      <div class="content-header">
+        <p class="content-title">لیست تراکنش ها</p>
+        <form class="search-form">
+          <input type="text" id="search" placeholder="جستجوی تراکنش..." />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <div>
+        <table class="table-header">
+          <tr>
+            <th>ردیف</th>
+            <th>نوع تراکنش</th>
+            <th>
+              <label for="price-filters">مبلغ</label>
+              <select name="filters" class="price-filters">
+                <option value="asc"></option>
+                <option value="asc">مبلغ صعودی</option>
+                <option value="desc">مبلغ نزولی</option>
+              </select>
+            </th>
+            <th>شماره پیگیری</th>
+            <th>
+              <label for="date-filters">تاریخ تراکنش</label>
+              <select name="filters" class="date-filters" >
+                <option value="asc"></option>
+                <option value="asc">تاریخ صعودی</option>
+                <option value="dec">تاریخ نزولی</option>
+              </select>
+            </th>
+          </tr>
+        </table>
+        <table class="table-list">
+          
+        </table>
+      </div>
+      <button><img src="" alt=""></button>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
